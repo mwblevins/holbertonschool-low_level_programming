@@ -3,7 +3,7 @@
 /**
  * main - prototypes
  *
- * Return: 0
+ * Return: Always 0.
  *
  */
 
