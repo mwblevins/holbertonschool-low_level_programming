@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _islower - check the code
+ * _isalpha - check the code
  *
  *@c: The character in ASCII
- * Return: 1 if c is lowercase, else return 0.
+ * Return: 1 if c is a letter lowercase or uppercase, else return 0.
  *
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
-	if (c >= 97 && c <= 122)
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	{
 		return (1);
 	}
