@@ -6,7 +6,7 @@
  * Return: 1 if c is upper else 0
  */
 
-int _isupper(nt c)
+int _isupper(int c)
 
 {
 	if (c >= 65 && c <= 90)
