@@ -11,10 +11,10 @@
 
 char *_strcpy(char *dest, char *src)
 {
+	char *return_ptr = dest;
+
 	if (dest == NULL)
 	return (NULL);
-
-	char *return_ptr = dest;
 
 	while (*src != '\0')
 	{
