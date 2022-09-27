@@ -6,7 +6,7 @@
  * @dest: destination
  * @src: Source
  *
- * Return: if NULL NUll, else destination
+ * Return: if NULL NUll, return_ptr
  */
 
 char *_strcpy(char *dest, char *src)
@@ -14,17 +14,17 @@ char *_strcpy(char *dest, char *src)
 	if (dest == NULL)
 	return (NULL);
 
-	int i;
+	char *return_ptr = dest;
 
-	i = 0;
-
-	while (src[i] != '\0')
+	while (*src != '\0')
 	{
-		dest[i] = src[i];
-		i++;
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	*dest = '\0';
+
+	return (return_ptr);
 }
 
 
