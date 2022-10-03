@@ -2,14 +2,14 @@
 /**
  * _strchr - check the code
  * @s: string
- * @c: first occurence
+ * @c: character
  *
  * Return: pointer to c
  */
 
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
 	for (; *(s + i) != '\0'; i++)
 		if (*(s + i) == c)
