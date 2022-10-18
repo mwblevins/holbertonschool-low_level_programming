@@ -12,11 +12,6 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *dummy;
-
-	dummy = malloc(5);
-	free(dummy);
-
 	char *sout;
 	unsigned int ls1, ls2, lsout, i;
 
