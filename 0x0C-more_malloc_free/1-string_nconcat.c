@@ -12,7 +12,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *sout;
+	char *sout, *dumby;
 	unsigned int ls1, ls2, lsout, i;
 
 	if (s1 == NULL)
@@ -44,6 +44,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			sout[i] = s2[i - ls1];
 
 	sout[i] = '\0';
+	dumby = malloc(5);
+	free(dumby);
 
 	return (sout);
 }
