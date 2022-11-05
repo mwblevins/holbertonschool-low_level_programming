@@ -18,10 +18,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	for (character = 0; str[character]; character++)
 		;
 	newnode->len = character;
-	new->next = NULL;
+	newnode->next = NULL;
 	temp = *head;
 
-	if (*temp == NULL)
+	if (temp == NULL)
 		*head = newnode;
 	else
 	{
