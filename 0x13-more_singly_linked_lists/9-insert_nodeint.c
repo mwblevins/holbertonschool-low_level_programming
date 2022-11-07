@@ -3,7 +3,7 @@
 /**
  * insert_nodeint_at_index - inserts a new node at a given position
  * @head: head
- * @index: index
+ * @idx: index
  * @n: data
  * Return: The address of the new node or NULL if it failed
  */
