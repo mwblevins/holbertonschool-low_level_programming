@@ -16,19 +16,19 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		return (NULL);
 
 	new->n = n;
-	new->prev = NULL;
+	new->next = NULL;
 	h = *head;
 	if (h != NULL)
 	{
-		while (h->prev != NULL)
-			h = h->prev;
+		while (h->next != NULL)
+			h = h->next;
+		h->next = new;
 	}
-
-	new->next = h;
-
-	if (h != NULL)
-		h->prev = new;
-	*head = new;
+	else
+	{
+		*head = new;
+	}
+	new->prev = h;
 
 	return (new);
 }
