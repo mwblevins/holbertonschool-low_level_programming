@@ -21,7 +21,7 @@ hash_node_t *add_n_hash(hash_node_t **head, const char *key, const char *value)
 		{
 			free(tmp->value);
 			tmp->value = strdup(value);
-			return (head);
+			return (*head);
 		}
 		tmp = tmp->next;
 	}
@@ -36,7 +36,7 @@ hash_node_t *add_n_hash(hash_node_t **head, const char *key, const char *value)
 	tmp->next = *head;
 	*head = tmp;
 
-	return (head);
+	return (*head);
 }
 
 /**
